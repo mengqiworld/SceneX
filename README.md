@@ -5,5 +5,5 @@
 [[Arxiv]]()
 [[PDF]]()
 _____________________________________________________________________
-https://www.youtube.com/f28b3c70-51c4-4b04-b7cc-9c53427532da
+https://github.com/MineDojo/Voyager/assets/25460983/ce29f45b-43a5-4399-8fd8-5dd105fd64f2
 </div>
