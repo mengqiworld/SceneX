@@ -1,1 +1,120 @@
-<h1>asdsa</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的论文题目</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            elements: ["mathjax-rendered"],
+            tex2jax: {
+                inlineMath: [['$','$'],['\\(','\\)']],
+                processEscapes: true
+            }
+        });
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        /* 样式化标题和作者 */
+        body {
+            text-align: center;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            overflow-wrap: break-word;
+            display: inline-block; /* 将标题包装为内联块，以保持整体居中 */
+            text-align: center; /* 居中对齐 */
+        }
+        p.author {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: rgba(0, 0, 255, 0.7);
+        }
+        /* 样式化文章摘要 */
+        p.abstract {
+            text-align: center;
+            font-size: 16px;
+        }
+        /* 样式化视频区域 */
+        .video-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-item {
+            margin: 10px;
+            text-align: center;
+        }
+        .video-item video {
+            width: 320px;
+            height: 180px;
+        }
+
+        /* Flexbox布局 */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-item {
+            width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .video-item {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Scene<span id="mathjax-rendered">$\mathscr{X}$</span>: Procedural Controllable Large-scale Scene Generation via Large-language Models</h1>
+    <p class="author">ANONYMOUS AUTHOR(S)</p>
+    <div class="video-container">
+        <h2>Demo</h2>
+        <div class="video-grid">
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频1的描述或其他相关文字内容。</p>
+            </div>
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频2的描述或其他相关文字内容。</p>
+            </div>
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频3的描述或其他相关文字内容。</p>
+            </div>
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频4的描述或其他相关文字内容。</p>
+            </div>
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频5的描述或其他相关文字内容。</p>
+            </div>
+            <div class="video-item">
+                <video src="演示文稿1.mp4" autoplay muted loop></video>
+                <p>视频6的描述或其他相关文字内容。</p>
+            </div>
+            <!-- 添加更多视频项 -->
+        </div>
+    </div>
+    <p class="abstract" style="font-size: 125%;">Abstract:Due to its great application potential, large-scale scene generation has drawn extensive attention in academia and industry.
+    Recent research employs powerful generative models to create desired scenes and achieves promising results.
+    However, most of these methods represent the scene using 3D primitives (e.g. point cloud or radiance field) incompatible with the industrial pipeline.
+    Moreover, the quality of generated assets is far from meeting industrial requirements.
+    These issues lead to a substantial gap between academic research and industrial deployment.
+    To bridge the gap, we resort to procedural modeling, a technique that can create high-quality 3D assets using a complex rule-based system.
+    Despite its superiority in scalability and quality, this technique demands profound domain expertise to convert textual descriptions into abstract parameters.
+    Inspired by recent advances in large language models (LLM), we introduce an LLM agent to drive the procedural modeling, which effectively lower the entry barrier. By combining procedural content generation (PCG) and LLM agent, we introduce a large-scale scene generation framework, \mymethod{}, which can automatically produce high-quality procedural models according to designers' textual descriptions.
+    Specifically, the proposed method comprises two components, PCGBench and PCG-Planner. The former encompasses an extensive collection of accessible procedural assets and thousands of hand-craft API documents. The latter aims to generate executable actions for Blender to produce controllable and precise 3D assets guided by the user's instructions. Our \mymethod{} can generate a city spanning 2.5 km $\times$ 2.5 km with delicate layout and geometric structures, drastically reducing the time required from two weeks for several professional PCG engineers to just a few hours for an ordinary user. Extensive experiments demonstrated the capability of our method in controllable large-scale scene generation and editing, including asset placement and season translation.</p>
+
+</body>
+</html>
